@@ -29,7 +29,7 @@ async def fore(c, m):
       except UserBannedInChannel:
          return await c.send_message(chat_id=m.chat.id, text="Hai you made a mistake so you are banned from channel so you are banned from me too 😜")
       except UserNotParticipant:
-          button = [[InlineKeyboardButton('📌JOIN UPDATE CHANNEL 📌', url='https://t.me/Private_Bots')]]
+          button = [[InlineKeyboardButton('🇮🇳 Updates Channel', url='https://t.me/Private_Bots')]]
           markup = InlineKeyboardMarkup(button)
           return await c.send_message(chat_id=m.chat.id, text="""Hai bro,\n\nYou must join my channel for using me.\n\nPress this button to join now 👇""", reply_markup=markup)
       m.continue_propagation()
