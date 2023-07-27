@@ -38,14 +38,16 @@ async def fore(c, m):
 
 @app.on_message(filters.command(['start']))
 async def start(client, message):
- await message.reply_text(text =f"""Hello {message.from_user.first_name }image to pdf bot 
+ await message.reply_text(text =f"""Hello {message.from_user.first_name } , I Am image to pdf bot 
 
 i can convert image to pdf
+
+**Send Me Images And At End Send /convert**
 
 This bot created by @Prime_Hritu""",reply_to_message_id = message.id ,  reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/Private_Bots") ]
+                    InlineKeyboardButton("Updates Channel 🇮🇳" ,url="https://t.me/Private_Bots") ]
                  ]        ) )
 
 
