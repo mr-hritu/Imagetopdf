@@ -40,7 +40,7 @@ async def start(client, message):
 
 i can convert image to pdf
 
-This bot created by @mrlokaman""",reply_to_message_id = message.id ,  reply_markup=InlineKeyboardMarkup(
+This bot created by @Prime_Hritu""",reply_to_message_id = message.id ,  reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/Private_Bots") ]
