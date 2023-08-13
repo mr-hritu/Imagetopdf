@@ -7,11 +7,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserBannedInChannel, UserNotParticipant
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
-TOKEN = os.environ.get("TOKEN", "")
+TOKEN = os.environ.get("TOKEN", "6454096886:AAFY9PNFj2C7DOMmbn8-xwfCEKIlIyrmuPI")
 
-API_ID = int(os.environ.get("API_ID", 12345))
+API_ID = int(os.environ.get("API_ID", 28888037))
 
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "9fbe164b5591df05fbd8577e3b1d6d21")
 app = Client(
         "pdf",
         bot_token=TOKEN,api_hash=API_HASH,
@@ -24,14 +24,14 @@ LIST = {}
 @app.on_message(filters.text & filters.private & filters.incoming)
 async def fore(c, m):
       try:
-        chat = await c.get_chat_member(-1001785446911, m.from_user.id)
+        chat = await c.get_chat_member(-1001895796720, m.from_user.id)
         if chat.status=="kicked":
            await c.send_message(chat_id=m.chat.id, text="You are Banned ☹️\n\n📝 If u think this is an ERROR message in @Privates_Chats", reply_to_message_id=m.id)
            m.stop_propagation()
       except UserBannedInChannel:
          return await c.send_message(chat_id=m.chat.id, text="Hai you made a mistake so you are banned from channel so you are banned from me too 😜")
       except UserNotParticipant:
-          button = [[InlineKeyboardButton('🇮🇳 Updates Channel', url='https://t.me/Private_Bots'),InlineKeyboardButton('🇮🇳 Channel', url='https://t.me/Technical_Dynamic')],[InlineKeyboardButton('🇮🇳 Channel', url='https://t.me/Airdrop_unique_76')]]
+          button = [[InlineKeyboardButton('🇮🇳 Updates Channel', url='https://t.me/maxgiveawayss'),InlineKeyboardButton('🇮🇳 Updates Channel', url='https://t.me/Private_Bots')]]
           markup = InlineKeyboardMarkup(button)
           return await c.send_message(chat_id=m.chat.id, text="""Hai bro,\n\nYou must join my channel for using me.\n\nPress this button to join now 👇""", reply_markup=markup)
       m.continue_propagation()
