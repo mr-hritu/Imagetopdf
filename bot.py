@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserBannedInChannel, UserNotParticipant
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
-TOKEN = os.environ.get("TOKEN", "6454096886:AAFY9PNFj2C7DOMmbn8-xwfCEKIlIyrmuPI")
+TOKEN = os.environ.get("TOKEN", "")
 
 API_ID = int(os.environ.get("API_ID", 28888037))
 
